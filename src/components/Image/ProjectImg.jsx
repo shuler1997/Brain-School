@@ -13,7 +13,7 @@ const ProjectImg = ({ filename, alt }) => (
               relativePath
               name
               childImageSharp {
-                fluid(maxWidth: 1366) {
+                fluid(quality: 100, maxWidth: 1366) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -28,7 +28,7 @@ const ProjectImg = ({ filename, alt }) => (
       if (!image) return null;
 
       const imageFluid = image.node.childImageSharp.fluid;
-      return <Img alt={alt} fluid={imageFluid} />;
+      return <Img alt={alt} fluid={imageFluid} style={{ boxShadow: '5px 5px lightblue' }} />;
     }}
   />
 );

@@ -26,7 +26,7 @@ const Projects = () => {
     <section id="projects">
       <Container>
         <div className="project-wrapper">
-          <Title title="Projects" />
+          <Title title="Our Team" />
           {projects.map((project) => {
             const { title, info, info2, url, repo, img, id } = project;
 
@@ -49,7 +49,7 @@ const Projects = () => {
                         </p>
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
-                      <a
+                      {/* <a
                         target="_blank"
                         rel="noopener noreferrer"
                         className="cta-btn cta-btn--hero"
@@ -67,11 +67,11 @@ const Projects = () => {
                         >
                           Source Code
                         </a>
-                      )}
+                      )} */}
                     </div>
                   </Fade>
                 </Col>
-                <Col lg={8} sm={12}>
+                <Col lg={4} sm={12}>
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
@@ -81,10 +81,10 @@ const Projects = () => {
                   >
                     <div className="project-wrapper__image">
                       <a
-                        href={url || '#!'}
-                        target="_blank"
-                        aria-label="Project Link"
-                        rel="noopener noreferrer"
+                        // href={url || '#!'}
+                        // target="_blank"
+                        // aria-label="Project Link"
+                        // rel="noopener noreferrer"
                       >
                         <Tilt
                           options={{

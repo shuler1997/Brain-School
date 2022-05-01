@@ -18,6 +18,7 @@
 
     .row {
       margin-bottom: 8rem;
+      justify-content: center;
 
       @include respond(phone) {
         margin-bottom: 4rem;
